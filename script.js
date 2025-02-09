@@ -1,9 +1,12 @@
+
+// Declarando las variables a utilizar: lista de peliculas totales, arrendadas y disponibles
 const peliculasTodas = ["Volver al futuro 1","Titanic","Rocky 1"];
-const peliculasStock = ["Volver al futuro 1","Titanic"];
-const peliculasArrendadas = ["Rocky 1"];
+const peliculasStock = ["Volver al futuro 1","Titanic","Rocky 1"];
+const peliculasArrendadas = [];
 let opcion;
 let pelicula;
 
+// Funciones para mostrar por alert y para buscar, agregar y sacar peliculas de los listas mediante prompt
 function todasPeliculas() {
     if (peliculasTodas.length === 0) {
         alert("No tenemos películas");
@@ -42,7 +45,7 @@ function arrendarPelicula() {
         }
     }
 }
-
+// Menu del programa con las distintas opciones
 do {
     opcion = parseInt(prompt("Bienvenido al Videoclub Pobre \n Elige tu opción en el menú: \n 1) Ver listado de todas las películas. \n 2) Ver el listado de películas disponibles: \n 3) Arrendar una película"));
 
